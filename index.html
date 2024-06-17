@@ -5,30 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
-        <div class="header"></div>
-        <div class="slider-container">
+    <main class="content">
+        <header>
+            <div class="left-header"></div>
+            <div class="right-header"></div>
+        </header>
+        <section class="slider-container">
             <div class="slider-wrapper" id="slider-wrapper">
-                <div class="slider" id="slider-row-1"></div>
-                <div class="slider" id="slider-row-2">
-                    <div class="arrows">
-                        <img src="/assets/arrow-gray-left.png" class="arrow" id="left-arrow">
-                        <img src="/assets/arrow-gray-right.png" class="arrow" id="right-arrow">
+                <div class="slider-top-row" id="slider-top-row">
+                    <img src="./assets/slider-image-1.jpg" alt="Image1">
+                    <img src="./assets/slider-image-2.jpg" alt="Image2">
+                    <img src="./assets/slider-image-3.jpg" alt="Image3">
+                    <img src="./assets/slider-image-4.jpg" alt="Image4">
+                    <img src="./assets/slider-image-5.jpg" alt="Image5">
+                    <img src="./assets/slider-image-8.jpg" alt="Image8">
+                </div>
+                <div class="bottom-row">
+                    <div class="slider-bottom-row" id="slider-bottom-row">
+                        <img src="./assets/slider-image-5.jpg" alt="Image5">
+                        <img src="./assets/slider-image-6.jpg" alt="Image6">
+                        <img src="./assets/slider-image-7.jpg" alt="Image7">
+                        <img src="./assets/slider-image-8.jpg" alt="Image8">
+                        <img src="./assets/slider-image-9.jpg" alt="Image9">
+                        
                     </div>
+                    <nav class="arrows">
+                        <button class="arrow" id="left-arrow">
+                            <img src="./assets/arrow-blue-left.png" alt="Left arrow">
+                        </button>
+                        <button class="arrow" id="right-arrow">
+                            <img src="./assets/arrow-blue-right.png" alt="Right arrow">
+                        </button>
+                    </nav>
                 </div>
             </div>
-            <div class="slider-description">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-        </div>
-        <div class="footer"></div>
-    </div>
+            <article class="slider-description">
+                <h1>Lorem ipsum dolor sit amet consectetuer adipiscing elit </h1>
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </article>
+        </section>
+        <footer></footer>
+    </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
