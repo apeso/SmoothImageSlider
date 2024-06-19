@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 730px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 100px auto 100px; 
+    height: 730px;
+    width: 941px;
+    margin: 0 auto;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.left-header{
+    flex: 1;
+    background-color: #DDDDDD;
+}
+.right-header{
+    flex: 2;
+    background-color: #DDDDDD;
+}
+footer{
+    height: 100px;
+    background-color: #DDDDDD;
+}
+.slider-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.slider-wrapper {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+    
+}
+
+.slider-top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    transition: transform 1s ease;
+    
+}
+.slider-bottom-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    transition: transform 1s ease;
+}
+.bottom-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    transition: transform 1s ease;
+}
+img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5%;
+    margin: 5px;
+}
+
+.slider-description {
+    flex: 1;
+    padding: 10px;
+    height: 80%;
+    background-color: white;
+    
+    z-index: 1;
+}
+
+.slider-description h1 {
+    font-size: 26px;
+    color: #134880;
+    font-weight: bold;
+}
+
+.slider-description p {
+    font-size: 18px;
+    color: #47494C;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+    width: 150px;
+    z-index: 1;
+    background-color: white;
+}
+
+.arrow {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #134880;
+    background-color: white;
+    border-radius: 20%;
+    padding: 10px;
+    cursor: pointer;  
+}
+
+.arrow img {
+    width: 10px; 
+    height: fit-content;
+}
+#left-arrow:hover, #right-arrow:hover{
+    border: 1px solid #DDDDDD;
+}
+
+#left-arrow:hover img {
+    content: url('./assets/arrow-gray-left.png');
+}
+
+#right-arrow:hover img {
+    content: url('./assets/arrow-gray-right.png'); 
+}

@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 730px;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-rows: 100px auto 100px; 
+    height: 730px;
+    width: 941px;
+    margin: 0 auto;
+  }
+  

@@ -1,0 +1,24 @@
+{
+  "name": "factory_frontendtask",
+  "version": "1.0.0",
+  "description": "<h1>📸 InteractiveImageSlider</h1>",
+  "main": "script.js",
+  "scripts": {
+    "build": "npm run build-css && npm run minify-css",
+    "build-css": "sass styles/scss/main.scss styles/css/main.css",
+    "minify-css": "postcss styles/css/main.css -o styles/css/main.min.css",
+    "build-js": "babel script.js --out-file script-es5.js",    
+    "minify-js": "uglifyjs script-es5.js -o script.min.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "cssnano": "^7.0.3",
+    "sass": "^1.77.6",
+    "uglify-js": "^3.18.0"
+  }
+}

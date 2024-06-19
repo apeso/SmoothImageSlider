@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  gap: 20px;
+}
+header .left-header {
+  flex: 1;
+  height: 100px;
+  background-color: #DDDDDD;
+}
+header .right-header {
+  flex: 2;
+  height: 100px;
+  background-color: #DDDDDD;
+}/*# sourceMappingURL=header.css.map */
